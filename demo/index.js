@@ -1,0 +1,3 @@
+Document.body.onclick =function(){
+    
+}
