@@ -30,17 +30,18 @@
 				background-color:rgb(58,75,167) ;
 				box-shadow: 0px 1px 2px 0px rgb(58,75,168) inset;
 			}
-			#head #top-head span{
+			#head #top-head a{
 				width:210px;
 				line-height: 45px;
 				opacity: 0.9;
 				font-size: 13px;
+				color:white;
+				text-decoration: none;
 				display: inline-flex;
 				justify-content: center;
 			}
-			#head #top-head span:hover{
+			#head #top-head a:hover{
 				opacity: 1;
-				cursor:pointer;
 			}
 			#body{
 				width:884px;
@@ -104,7 +105,6 @@
 				margin-left:25px;
 			}
 			#foot{
-				width:100%;
 				height:100px;
 				background-color:#424242;
 			}
@@ -123,6 +123,21 @@
 				color:#9e9e9e;
 				text-decoration: none;
 			}
+			#right{
+				float:right;
+				width:55px;
+				height:55px;
+				border-radius:50%;
+				background-color:rgb(255,64,129);
+				margin:8px 20px 0;
+				box-shadow: 0px 0px 2px 2px rgb(41,36,33);
+				
+			}
+			#right img{
+				width:30px;
+				height:30px;
+				padding:12px;
+			}
 		</style>
 	</head>
 	<body>
@@ -130,10 +145,10 @@
 			<img src="img/logo.png"/>
 			<span id="head-span1">Material Design Portfolio</span>
 			<div id="top-head">
-				<span>HOME</span>
-				<span>PORTFOLIO</span>
-				<span>ABOUT</span>
-				<span>CONTACT</span>
+				<a href="#">HOME</a>
+				<a href="#">PORTFOLIO</a>
+				<a href="#">ABOUT</a>
+				<a href="#">CONTACT</a>
 			</div>
 		</div>
 		<div id="body">
@@ -157,15 +172,15 @@
 					<span>Gary Doe</span>
 				</div>
 			</div>
+		</div>	
+		<div id="right">
+			<img src="img/email.png"/>
 		</div>
 		<div id="foot">
 			<p id="foot-text">Copyright © 2019.Company name All rights reserved. 
 				<a href="#" id="foot-ate">网页模板</a> &nbsp;
 				<a href="#" id="foot-att">Privacy & Terms</a> 
 			</p>
-			<span id="foot-right">
-				
-			</span>
 		</div>
 	</body>
 </html>
