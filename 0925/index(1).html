@@ -71,21 +71,25 @@
     </div>
     <script>
         //获取元素
-   
+   		var area= document.getElementById('area');
+   		var enter = document.getElementById('enter');
+   		var btn = document.getElementById('btn');
        //点击发送
-       
+       btn.onclick = function(){
            //用户输入的内容字符串
-         
+       		var nr = enter.innerText;
+//     		console.log(nr);
            //创建一个对话框,原本没有任何对话框
-           
+            var li = document.createElement('li');
            //把创建的这个空的对话框放到area区域中
-          
+            area.appendChild(li);
            //创建一个文本节点,他的内容是用户输入的那个字符串
-         
+            var txt = document.createTextNode(nr);
            //把文本节点放到li里
-      
-
+      		li.appendChild(txt);
             //清空刚刚输入的内容
+            enter.innerHTML = '';
+       }
       
     
 
