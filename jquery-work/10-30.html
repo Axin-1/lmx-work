@@ -3,7 +3,7 @@
 <head>
      <meta charset="UTF-8">
      <title>Document</title>
-     <script src="jquery.js"></script>
+     <script src="../jquery.js"></script>
      <style>
      div{
          width:150px;
@@ -65,8 +65,14 @@
         <li></li>
     </ul>
      <script>
-         
+         var index=0;
          $("div").click(function(){
+             index++;
+             if(index%2==0){
+                $("li").hide("slow");
+            }else{
+                $("li").show("slow");
+            }
              $("ul").css("display","block");
              $("body").css("background",$(this).css("background-color"))
          })
